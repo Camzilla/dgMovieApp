@@ -41,7 +41,7 @@ export class MovieListComponent implements OnInit {
 
             let movie: Movie;
             movie = { ...data };
-            movie.Poster = '/assets/images/' + this.getImageSrc(movie.Poster);
+            movie.Poster = 'assets/images/' + this.getImageSrc(movie.Poster);
             movie.Year = movie.Released.slice(movie.Released.length - 4);
 
             this.listOfMovies.push(movie);
