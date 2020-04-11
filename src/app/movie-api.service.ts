@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Movie } from './movie/movie';
 
-const SEARCH_API_ENDPOINT = 'http://www.omdbapi.com/?s=Batman';
-const DETAIL_API_ENDPOINT = 'http://www.omdbapi.com/?i=';
+const SEARCH_API_ENDPOINT = 'https://www.omdbapi.com/?s=Batman';
+const DETAIL_API_ENDPOINT = 'https://www.omdbapi.com/?i=';
 const API_KEY = '&apikey=f143f2af';
 
 @Injectable({
