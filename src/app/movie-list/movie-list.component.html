@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="button__toggle">
+        <button type="button" *ngFor="let filter of options"
+        [ngClass]="(filter == selected) ? 'button__group--active' : ''"
+        (click)="filterMovieList(filter)"
+        class="button button__group">{{ filter }}'s</button>
+    </div>
+    <ul class="list">
+        <app-movie *ngFor="let movie of filteredListOfMovies" [movie]="movie"></app-movie>
+    </ul>
+</div>

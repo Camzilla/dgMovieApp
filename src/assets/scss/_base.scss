@@ -1,0 +1,25 @@
+$primary: #1A72B0;
+$secondary: #F9B44A;
+$font-color: #303436;
+
+$white: #ffffff;
+$black: #000000;
+
+////////////////////////////////////
+
+* { box-sizing: border-box;
+    &:before,
+    &:after { box-sizing: border-box; }
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+html { font-size: 62.5%; -webkit-font-smoothing: antialiased; font-family: Helvetica; }
+body { font-size: 1.5rem; color: $font-color; }
+
+h1, h2, h3, h4, h5, button { font-family: 'Open Sans', sans-serif; color: $font-color; }

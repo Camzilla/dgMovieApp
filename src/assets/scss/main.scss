@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans:wght@700&display=swap');
+@import 'normalize',
+        'base';
+
+.content { padding: 20px;
+    h1 { text-align: center; }
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.list { margin: 0; padding: 0; list-style: none; }
+
+.button {
+    color: $white;
+    background: $secondary;
+    text-decoration: none;
+    padding: 10px 40px 9px;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    margin-left: auto;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover { background: darken($secondary, 10%); }
+
+    &__group {
+        background: #F7F8F9;
+        border: 1px solid #C2CAD0;
+        color: #61696E;
+        font-size: 1.3rem;
+
+        &:first-child { border-radius: 3px 0 0 3px; border-right: none; }
+        &:last-child { border-radius: 0 3px 3px 0; border-left: none; }
+        &:hover { background: darken(#F7F8F9, 10%); }
+
+        &--active {
+            background: $primary;
+            color: $white;
+            box-shadow: 0 1px 3px 0px rgba($black, .2);
+            &:hover { background: darken($primary, 5%); }
+        }
+    }
+    &__toggle {
+        margin-bottom: 30px;
+        text-align: right;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    width: auto;
+    height: auto;
+}

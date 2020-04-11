@@ -1,0 +1,15 @@
+<li class="movie" *ngIf="movie">
+    <div class="movie__image">
+        <img src="{{ movie.Poster }}" alt="{{ movie.Title }}">
+    </div>
+    <div class="movie__content">
+        <h2 class="movie__header">{{ movie.Title }}</h2>
+        <div class="movie__details">
+            <span class="movie__rate">{{ movie.Rated }}</span>
+            <span class="movie__time">{{ movie.Time }}</span>
+            <span class="movie__release">{{ movie.Released }}</span>
+        </div>
+        <p class="movie__plot">{{ movie.Plot }}</p>
+        <a href="https://www.imdb.com/title/{{ movie.imdbID }}" target="_blank" class="button">View on IMDB</a>
+    </div>
+</li>
